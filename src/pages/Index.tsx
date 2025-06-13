@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -125,6 +124,14 @@ const Index = () => {
   const previewPortfolio = () => {
     if (generatedUrl) {
       window.open(generatedUrl, '_blank');
+    } else {
+      // Generate the URL first, then preview
+      generatePortfolio();
+      setTimeout(() => {
+        if (generatedUrl) {
+          window.open(generatedUrl, '_blank');
+        }
+      }, 100);
     }
   };
 
