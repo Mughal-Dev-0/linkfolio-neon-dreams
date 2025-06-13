@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
-import { Copy, Eye, Sparkles, Zap } from 'lucide-react';
+import { Copy, Eye, Sparkles, Zap, Palette, Settings } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import TemplateSelector from '@/components/TemplateSelector';
 import SmartTextSuggestions from '@/components/SmartTextSuggestions';
